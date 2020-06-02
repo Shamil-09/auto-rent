@@ -509,7 +509,7 @@ body {
 }
 
 .clients__title {
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 400;
   margin: 0;
   color: #000;
@@ -518,7 +518,7 @@ body {
 .clients__subtitle {
   color: #777;
   font-size: 1rem;
-  margin-bottom: 9.35rem;
+  margin-bottom: 10.8rem;
   font-weight: 400;
 }
 
@@ -526,12 +526,11 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.clients__1 {
+.clients__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,70 +539,90 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   max-width: 197px;
+  position: relative;
 }
 
-.clients__2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 197px;
-}
-
-.clients__3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 197px;
-}
-
-.clients__4 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 197px;
+.clients-images1 {
+  margin: -28px;
 }
 
 .clients__name1 {
   font-weight: 400;
+  margin-top: 69px;
+  margin-bottom: 0;
 }
 
 .clients__text1 {
   color: #777;
+  max-width: 152px;
+  line-height: 23px;
+}
+
+.clients__cloud1 {
+  position: absolute;
+  margin: 41px -46px;
+}
+
+.clients-images2 {
+  margin: -28px;
 }
 
 .clients__name2 {
   font-weight: 400;
+  margin-top: 69px;
+  margin-bottom: 0;
 }
 
 .clients__text2 {
   color: #777;
+  max-width: 152px;
+  line-height: 23px;
+}
+
+.clients__cloud2 {
+  position: absolute;
+  margin: 41px -46px;
+}
+
+.clients-images3 {
+  margin: -28px;
 }
 
 .clients__name3 {
   font-weight: 400;
+  margin-top: 69px;
+  margin-bottom: 0;
 }
 
 .clients__text3 {
   color: #777;
+  max-width: 152px;
+  line-height: 23px;
+}
+
+.clients__cloud3 {
+  position: absolute;
+  margin: 41px -46px;
+}
+
+.clients-images4 {
+  margin: -28px;
 }
 
 .clients__name4 {
   font-weight: 400;
+  margin-top: 69px;
+  margin-bottom: 0;
 }
 
 .clients__text4 {
   color: #777;
+  max-width: 152px;
+  line-height: 23px;
+}
+
+.clients__cloud4 {
+  position: absolute;
+  margin: 41px -46px;
 }
 /*# sourceMappingURL=style.css.map */
