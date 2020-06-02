@@ -14,12 +14,13 @@
 </head>
 
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="menu">
+
+  <section class="hero" id="navigation">
+    <header class="header">
+      <div class="menu header__menu">
         <div class="logo">
-          <a href="img/logo.png" alt="горы"></a>
-          <a href="#navigation" class="logo__title go-to">Ставрополье<br><span class="logo__subtitle">на
+          <img src="img/logo.png" class="logo__image" alt="горы">
+          <a href="#navigation" class="logo__title go-to">Ставрополье<span class="logo__subtitle">на
               ладони</span></a>
         </div>
         <div class="nav menu__nav">
@@ -29,30 +30,93 @@
           <a href="#contacts" class="nav__item go-to">Контакты</a>
         </div>
       </div>
+    </header>
+    <div class="container">
+      <div class="hero__content">
+        <h1 class="hero__title">Аренда авто в Пятигорске</h1>
+        <h3 class="hero__subtitle">Ставропольский край как на ладони</h3>
+        <h2 class="hero__text-low">Красоты Ставрополья</h2>
+        <h4 class="hero__subtext-low">Надежный автомобиль — залог лучших впечатлений!</h4>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <!-- HEADER -->
+  <!-- HERO -->
 
-  <main>
-    <section class="hero" id="navigation">
-      <div class="container">
-        <div class="hero__content">
-          <h1 class="title hero__title">Аренда авто в Пятигорске</h1>
-          <h3 class="subtitle hero__subtitle">Ставропольский край как на ладони</h3>
+  <section class="places">
+    <div class="container">
+      <div class="places__video">
+        <img src="img/play-icon.svg" class="places__play" alt="play">
+      </div>
+    </div>
+  </section>
+
+  <!-- PLACES -->
+
+  <section class="clients">
+    <div class="container">
+      <div class="clients__info">
+        <h2 class="clients__title">Впечатления клиентов</h2>
+        <h4 class="clients__subtitle">Ваши впечатления — наша мотивация</h4>
+      </div>
+      <div class="row clients__row">
+        <div class="clients__1">
+          <div class="clients-images1">
+            <img src="img/clients/client1.png" class="clients__face1" alt="">
+            <img src="img/clients/icon1.png" class="clients__cloud1" alt="">
+          </div>
+          <h3 class="clients__name1">Большаков О.В.</h3>
+          <p class="clients__text1">Это было что-то невообразимое!! Если бы не этот автомобиль, наше путешествие бы не
+            состоялось!</p>
+        </div>
+        <div class="clients__2">
+          <div class="clients-images2">
+            <img src="img/clients/client2.png" class="clients__face2" alt="">
+            <img src="img/clients/icon2.png" class="clients__cloud2" alt="">
+          </div>
+          <h3 class="clients__name2">Волков Н.Б.</h3>
+          <p class="clients__text2">Нет слов, одни эмоции... СПАСИБО вам ребята! Отличный автомобиль, цена и ваше
+            отношение - РЕСПЕКТ!</p>
+        </div>
+        <div class="clients__3">
+          <div class="clients-images3">
+            <img src="img/clients/client3.png" class="clients__face3" alt="">
+            <img src="img/clients/icon3.png" class="clients__cloud3" alt="">
+          </div>
+          <h3 class="clients__name3">Новиков К.Ф.</h3>
+          <p class="clients__text3">Чтобы кто не говорил - без авто за две недели мало что можно увидеть когда
+            путешествуешь «дикарем».. РЕКОМЕНДУЮ!</p>
+        </div>
+        <div class="clients__4">
+          <div class="clients-images3">
+            <img src="img/clients/client4.png" class="clients__face4" alt="">
+            <img src="img/clients/icon4.png" class="clients__cloud4" alt="">
+          </div>
+          <h3 class="clients__name4">Шубин Т.И.</h3>
+          <p class="clients__text4">Все супер! Дастик ни разу не подвел, а спуск по дороге жизни на этом красавце -
+            просто на всю жизнь...</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- HERO -->
+  <!-- CLIENTS -->
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"
-      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.mask.min.js"></script>
-    <script src="js/main.js"></script>
+  <section class="about">
+    <div class="container">
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"
+    integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
+  <script src="js/jquery.mask.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>

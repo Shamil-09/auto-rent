@@ -350,14 +350,8 @@ template {
 }
 
 .container {
-  width: 90%;
-  max-width: 1256px;
+  max-width: 1095px;
   margin: auto;
-}
-
-.block {
-  -webkit-animation: show 2s ease 2s infinite;
-          animation: show 2s ease 2s infinite;
 }
 
 .row {
@@ -370,16 +364,6 @@ template {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-}
-
-.col-30 {
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
-}
-
-.col-50 {
-  width: 50%;
-  margin-top: 4.9rem;
 }
 
 *, *:before, *:after {
@@ -396,30 +380,230 @@ body {
   font-size: 14px;
 }
 
-img {
-  max-width: 100%;
+.header {
+  width: 100%;
+  color: white;
+}
+
+.header__menu {
+  padding: 72px 77px 0 97px;
+  margin-bottom: 1.78rem;
 }
 
 .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: red;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__nav {
+  padding: 1.42rem 0;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.logo__image {
+  height: 3.8rem;
+  width: 3.8rem;
+  margin-right: 1.57rem;
 }
 
 .logo__title {
-  display: block;
-  font-size: 1.71rem;
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
 }
 
 .logo__subtitle {
-  font-size: 0.85rem;
+  color: #ddd;
+  display: block;
+  font-size: 1rem;
 }
 
 .nav__item {
   text-decoration: none;
+  color: #ddd;
+  margin-right: 2.7rem;
+  font-size: 1.14rem;
+}
+
+.hero {
+  background: black url("../img/main-image.jpg") no-repeat center/cover;
+  height: 100vh;
   color: white;
-  margin-right: 2.85rem;
-  font-size: 1.14;
+}
+
+.hero__content {
+  max-width: 31.85rem;
+  margin-left: 4.28rem;
+}
+
+.hero__title {
+  font-size: 5.5rem;
+  line-height: 72px;
+  margin: 34px 20px 19px 20px;
+}
+
+.hero--rent {
+  display: block;
+}
+
+.hero__subtitle {
+  color: #ddd;
+  font-size: 25px;
+  margin: 13px 17px 18.28rem 17px;
+  max-width: 19.21rem;
+}
+
+.hero__text-low {
+  font-size: 2.4rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 400;
+}
+
+.hero__subtext-low {
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.places {
+  background: #f7f4f2;
+}
+
+.places__video {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  max-width: 64.28rem;
+  min-height: 36.21rem;
+  background: black url("../img/main-video.png") no-repeat center;
+}
+
+.places__play {
+  margin: auto;
+  position: relative;
+}
+
+.clients {
+  background-color: white;
+  padding-top: 10.35rem;
+  padding-bottom: 11.14rem;
+}
+
+.clients__info {
+  text-align: center;
+}
+
+.clients__title {
+  font-size: 2.4rem;
+  font-weight: 400;
+  margin: 0;
+  color: #000;
+}
+
+.clients__subtitle {
+  color: #777;
+  font-size: 1rem;
+  margin-bottom: 9.35rem;
+  font-weight: 400;
+}
+
+.clients__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.clients__1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 197px;
+}
+
+.clients__2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 197px;
+}
+
+.clients__3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 197px;
+}
+
+.clients__4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 197px;
+}
+
+.clients__name1 {
+  font-weight: 400;
+}
+
+.clients__text1 {
+  color: #777;
+}
+
+.clients__name2 {
+  font-weight: 400;
+}
+
+.clients__text2 {
+  color: #777;
+}
+
+.clients__name3 {
+  font-weight: 400;
+}
+
+.clients__text3 {
+  color: #777;
+}
+
+.clients__name4 {
+  font-weight: 400;
+}
+
+.clients__text4 {
+  color: #777;
 }
 /*# sourceMappingURL=style.css.map */
