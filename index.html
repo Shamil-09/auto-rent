@@ -48,6 +48,10 @@
       <div class="places__video">
         <img src="img/play-icon.svg" class="places__play" alt="play">
       </div>
+      <!-- <div class="places__text">
+        <h2 class="places__title">Красоты Ставрополья</h2>
+        <h4 class="places__subtitle">Надежный автомобиль — залог лучших впечатлений!</h4>
+      </div> -->
     </div>
   </section>
 
@@ -104,11 +108,69 @@
 
   <section class="about">
     <div class="container">
-
+      <div class="about__main">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/about/slide1.png"></div>
+            <div class="swiper-slide"><img src="img/about/slide2.png"></div>
+            <div class="swiper-slide"><img src="img/about/slide3.png"></div>
+            <div class="swiper-slide"><img src="img/about/slide4.png"></div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <div class="about__info">
+          <h2 class="about__title">О нашем автомобиле</h2>
+          <h3 class="about__subtitle">Чистый салон</h3>
+          <p class="about__text">Любая поездка по Ставрополью всегда комфортнее когда салон чист и опрятен - наш салон
+            не
+            исключение!<br><br>
+            <span class="about__text-low">(обязательное условие аренды - возвращение автомобиля в чистом виде)</span>
+          </p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ABOUT -->
+
+  <section class="auto">
+    <div class="container">
+      <div class="auto__row">
+        <div class="auto__column1">
+          <h2 class="auto__title">Авто</h2>
+          <h4 class="auto__subtitle">в приближении</h4>
+          <div class="auto__transmition transmition">
+            <div class="transmition__left">
+              <h4 class="transmition__text">Коробка передач</h4>
+            </div>
+            <div class="transmition__right">
+              <img src="img/auto/trans.png" class="transmition__icon">
+              <h4 class="transmition__value">AT</h4>
+              <p class="transmition__value2">5 ст.</p>
+            </div>
+          </div>
+          <div class="auto__mileage mileage">
+            <div class="mileage__left">
+              <h4 class="mileage__text">Чистый пробег</h4>
+            </div>
+            <div class="mileage__right">
+              <img src="img/auto/mileage.png" class="mileage__icon">
+              <h4 class="mileage__value">+100k</h4>
+              <p class="mileage__value2">2020 г.</p>
+            </div>
+          </div>
+        </div>
+        <div class="auto__column2"></div>
+        <div class="auto__column3"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTO -->
 
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
@@ -117,6 +179,7 @@
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
