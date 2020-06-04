@@ -688,6 +688,22 @@ img {
   max-width: 100%;
 }
 
+.swiper-pagination {
+  padding-left: 7rem;
+}
+
+.swiper-pagination-current {
+  font-size: 2rem;
+}
+
+.swiper-pagination-current::after {
+  color: #777;
+}
+
+.swiper-pagination-total {
+  color: #777;
+}
+
 .swiper-button-prev {
   background: url("../img/about/arrow-prev.svg") no-repeat center;
   background-size: 54px;
@@ -812,7 +828,7 @@ img {
   margin: 0;
   width: 53px;
   font-size: 0.92rem;
-  top: 35px;
+  top: 29px;
   left: 52px;
   line-height: 26px;
 }
@@ -1060,6 +1076,11 @@ img {
   font-size: 13px;
   text-align: center;
   color: #777;
+  text-decoration: none;
+}
+
+.order__promo:hover {
+  color: #17bebb;
 }
 
 .order__price {
@@ -1112,6 +1133,7 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 8.07rem;
 }
 
 .footer__info {
@@ -1155,6 +1177,10 @@ img {
   line-height: 2rem;
 }
 
+.footer__contacts-email:hover, .footer__contacts-agreement:hover, .footer__contacts-conditions:hover {
+  color: #17bebb;
+}
+
 .footer__questions {
   width: 535px;
   height: 190px;
@@ -1181,5 +1207,35 @@ img {
 
 .footer__questions-span {
   color: white;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__vk {
+  margin-right: 18px;
+}
+
+.footer__yt {
+  margin-right: 18px;
+}
+
+.footer__whatsup {
+  margin-right: 18px;
+}
+
+.footer__mail {
+  margin-right: 18px;
+}
+
+.footer__license-text {
+  font-size: 13px;
+  color: #777;
 }
 /*# sourceMappingURL=style.css.map */
