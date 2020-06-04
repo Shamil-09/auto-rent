@@ -6,11 +6,14 @@
   background: #262626 url('../img/auto/auto3.png') no-repeat center
   &__row
     display: flex
+    justify-content: space-between
   &__title
-    font-size: 3rem
+    font-size: 6rem
     margin: 0
   &__subtitle
     margin-bottom: 5.85rem
+    font-size: 1.71rem
+    margin-top: 1.14rem
   &__column1
     max-width: 16.65rem
     display: flex
@@ -23,33 +26,146 @@
     height: 207px
     margin-bottom: 3.21rem
     background: url('../img/auto/auto1.png') no-repeat center
+    // padding: 35px 45px 62px 54px
   &__mileage
     display: flex
     justify-content: space-around
     width: 233px
     height: 207px
     background: url('../img/auto/auto2.png') no-repeat center
+  &__column2
+    max-width: 14.5rem
 
 .transmition
-  &__left
-  &__right
-    display: flex
-    flex-direction: column
-    justify-content: center
+  position: relative
   &__text
     width: 53px
+    font-size: 0.92rem
+    margin: 0
+    position: absolute
+    top: 35px
+    left: 54px
+    margin: 0
+    line-height: 20px
+  &__value
+    font-size: 2.57rem
+    margin: 0
+    position: absolute
+    bottom: 50px
+    right: 45px
+  &__value2
+    font-size: 0.92rem
+    color: #777
+    margin: 0
+    position: absolute
+    bottom: 36px
+    right: 45px
   &__icon
     width: 26px
     height: 29px
+    position: absolute
+    top: 39px
+    right: 50px
 
 .mileage
-  &__left
-  &__right
-    display: flex
-    flex-direction: column
-    justify-content: center
+  position: relative
   &__text
+    position: absolute
+    margin: 0
     width: 53px
+    font-size: 0.92rem
+    top: 35px
+    left: 52px
+    line-height: 26px
+  &__value
+    font-size: 2.57rem
+    margin: 0
+    position: absolute
+    top: 118px
+    right: 54px
+  &__value2
+    font-size: 0.92rem
+    color: #777
+    margin: 0
+    position: absolute
+    bottom: 36px
+    right: 53px
   &__icon
+    position: absolute
+    top: 36px
+    right: 53px
     width: 29px
     height: 23px
+
+.column2
+  display: flex
+  flex-direction: column
+  margin-top: 7.5rem
+  &__fuel
+    display: flex
+    justify-content: space-between
+    max-height: 6rem
+    margin-bottom: 1.28rem
+    &-name
+      font-size: 84px
+      margin: 0
+    &-number
+      font-size: 1.71rem
+      color: #17bebb
+      margin: 0
+  &__fuel-type
+    display: flex
+    justify-content: space-around
+  &__power
+    font-size: 1.16rem
+    max-width: 8.86rem
+    line-height: 2rem
+    margin-bottom: 5.28rem
+  &__fuel-type
+    display: flex
+    flex-direction: column
+  &__paper
+    width: 54px
+    height: 54px
+    margin-bottom: 2.4rem
+  &__documents
+    max-width: 12.5rem
+    font-size: 1.16rem
+    line-height: 2rem
+  &__go
+    color: #e55e04
+
+.column3
+  display: flex
+  flex-direction: column
+  margin-top: 7.5rem
+  max-width: 18rem
+  &__year
+    display: flex
+    justify-content: space-between
+    max-height: 84px
+    margin-bottom: 3.28rem
+    &-name
+      font-size: 6rem
+      margin: 0
+    &-number
+      font-size: 1.71rem
+      color: #17bebb
+      margin: 0
+  &__options
+    display: flex
+    justify-content: space-between
+    margin-bottom: 6.42rem
+  &__heart
+    width: 54px
+    height: 54px
+    margin-bottom: 3.07rem
+  &__main-text
+    font-size: 16px
+    color: white
+  &__text
+    font-size: 13px
+    color: #777
+    line-height: 20px
+    max-width: 250px
+    margin-right: 50px

@@ -721,15 +721,20 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .auto__title {
-  font-size: 3rem;
+  font-size: 6rem;
   margin: 0;
 }
 
 .auto__subtitle {
   margin-bottom: 5.85rem;
+  font-size: 1.71rem;
+  margin-top: 1.14rem;
 }
 
 .auto__column1 {
@@ -767,29 +772,90 @@ img {
   background: url("../img/auto/auto2.png") no-repeat center;
 }
 
-.transmition__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.auto__column2 {
+  max-width: 14.5rem;
+}
+
+.transmition {
+  position: relative;
 }
 
 .transmition__text {
   width: 53px;
+  font-size: 0.92rem;
+  margin: 0;
+  position: absolute;
+  top: 35px;
+  left: 54px;
+  margin: 0;
+  line-height: 20px;
+}
+
+.transmition__value {
+  font-size: 2.57rem;
+  margin: 0;
+  position: absolute;
+  bottom: 50px;
+  right: 45px;
+}
+
+.transmition__value2 {
+  font-size: 0.92rem;
+  color: #777;
+  margin: 0;
+  position: absolute;
+  bottom: 36px;
+  right: 45px;
 }
 
 .transmition__icon {
   width: 26px;
   height: 29px;
+  position: absolute;
+  top: 39px;
+  right: 50px;
 }
 
-.mileage__right {
+.mileage {
+  position: relative;
+}
+
+.mileage__text {
+  position: absolute;
+  margin: 0;
+  width: 53px;
+  font-size: 0.92rem;
+  top: 35px;
+  left: 52px;
+  line-height: 26px;
+}
+
+.mileage__value {
+  font-size: 2.57rem;
+  margin: 0;
+  position: absolute;
+  top: 118px;
+  right: 54px;
+}
+
+.mileage__value2 {
+  font-size: 0.92rem;
+  color: #777;
+  margin: 0;
+  position: absolute;
+  bottom: 36px;
+  right: 53px;
+}
+
+.mileage__icon {
+  position: absolute;
+  top: 36px;
+  right: 53px;
+  width: 29px;
+  height: 23px;
+}
+
+.column2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -797,17 +863,132 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin-top: 7.5rem;
 }
 
-.mileage__text {
-  width: 53px;
+.column2__fuel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 6rem;
+  margin-bottom: 1.28rem;
 }
 
-.mileage__icon {
-  width: 29px;
-  height: 23px;
+.column2__fuel-name {
+  font-size: 84px;
+  margin: 0;
+}
+
+.column2__fuel-number {
+  font-size: 1.71rem;
+  color: #17bebb;
+  margin: 0;
+}
+
+.column2__fuel-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.column2__power {
+  font-size: 1.16rem;
+  max-width: 8.86rem;
+  line-height: 2rem;
+  margin-bottom: 5.28rem;
+}
+
+.column2__fuel-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.column2__paper {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 2.4rem;
+}
+
+.column2__documents {
+  max-width: 12.5rem;
+  font-size: 1.16rem;
+  line-height: 2rem;
+}
+
+.column2__go {
+  color: #e55e04;
+}
+
+.column3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 7.5rem;
+  max-width: 18rem;
+}
+
+.column3__year {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-height: 84px;
+  margin-bottom: 3.28rem;
+}
+
+.column3__year-name {
+  font-size: 6rem;
+  margin: 0;
+}
+
+.column3__year-number {
+  font-size: 1.71rem;
+  color: #17bebb;
+  margin: 0;
+}
+
+.column3__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 6.42rem;
+}
+
+.column3__heart {
+  width: 54px;
+  height: 54px;
+  margin-bottom: 3.07rem;
+}
+
+.column3__main-text {
+  font-size: 16px;
+  color: white;
+}
+
+.column3__text {
+  font-size: 13px;
+  color: #777;
+  line-height: 20px;
+  max-width: 250px;
+  margin-right: 50px;
 }
 /*# sourceMappingURL=style.css.map */
