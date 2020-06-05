@@ -1,5 +1,6 @@
 $(document).ready(function () {
   var swiper = new Swiper('.swiper-container', {
+    loop: true,
     pagination: {
       el: '.swiper-pagination',
       type: 'fraction',
@@ -39,7 +40,49 @@ $(document).ready(function () {
     event.target.playVideo();
   }
 
+  // маска для телефона
+  $('[type=tel]').mask('+7(000)00-00-000');
+
+  // Validation
+
+  $('.order__days').validate({
+
+    errorClass: "invalid",
+    errorElement: "div",
+    rules: {
+      order__input: {
+        required: true,
+        minlength: 1,
+        maxlength: 3
+      },
+      order__phone: "required",
+      order__input: "required",
+    },
+
+    // правило сообщения
+    messages: {
+      order__input: {
+        required: "Введите количество дней",
+        maxlength: "Число не должно превышать 2 цифр"
+      },
+      order__phone: "Телефон обязателен",
+    },
+    submitHandler: function (form) {
+      $.ajax({
+        type: "POST",
+        url: "send.php",
+        data: $(form).serialize(),
+        success: function (response) {
+          $(form)[0].reset();
+          // modal.removeClass('modal--visible');
+          // $('.modal-thanks').addClass('modal-thanks--visible');
+        },
+        error: function (response) {
+          console.error('Ошибка запроса ' + response);
+        }
+      });
+    }
 
 
-
+  });
 });

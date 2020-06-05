@@ -23,6 +23,9 @@
     color: white
     padding-left: 37px
     padding-right: 30px
+    margin-bottom: 40px
+    &placeholder
+      font-size: 24px
     &-main
       color: white
       font-size: 24px
@@ -30,12 +33,14 @@
       color: #777
       font-size: 16px
   &__phone
+    position: relative
     width: 306px
     height: 54px
     border: none
     border-bottom: 2px solid #444
     background-color: #222
     margin-bottom: 45px
+    color: white
   &__button
     width: 306px
     height: 54px
@@ -72,3 +77,11 @@
     color: #17bebb
     margin: 0
     text-decoration: line-through
+
+#order__input-error
+  position: absolute
+  margin-top: 100px
+
+#order__phone-error
+  position: absolute
+  margin-top: 195px
