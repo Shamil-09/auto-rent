@@ -35,8 +35,14 @@
       <div class="hero__content">
         <h1 class="hero__title">Аренда авто в Пятигорске</h1>
         <h3 class="hero__subtitle">Ставропольский край как на ладони</h3>
-        <h2 class="hero__text-low">Красоты Ставрополья</h2>
-        <h4 class="hero__subtext-low">Надежный автомобиль — залог лучших впечатлений!</h4>
+      </div>
+      <div class="hero__video" id="player">
+        <script src="https://www.youtube.com/iframe_api"></script>
+        <img class="hero__play" src="img/play-icon.svg" alt="play">
+        <div class="hero__video-text">
+          <h2 class="hero__video-title">Красоты Ставрополья</h2>
+          <p class="hero__video-subtitle">Надежный автомобиль — залог лучших впечатлений!</p>
+        </div>
       </div>
     </div>
   </section>
@@ -45,13 +51,27 @@
 
   <section class="places">
     <div class="container">
-      <div class="places__video">
-        <img src="img/play-icon.svg" class="places__play" alt="play">
+      <div class="places__row">
+        <div class="places__text">
+          <p class="places__main-text">Интересные места Ставропольского края <span class="places__span">эксклюзивно для
+              вас!</span></p>
+          <div class="places__text-camera">
+            <p class="places__second-text">Все видео</p>
+            <img src="img/camera.png" class="places__camera" alt="camera">
+          </div>
+        </div>
+        <div class="places__slider"></div>
       </div>
-      <!-- <div class="places__text">
-        <h2 class="places__title">Красоты Ставрополья</h2>
-        <h4 class="places__subtitle">Надежный автомобиль — залог лучших впечатлений!</h4>
-      </div> -->
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
     </div>
   </section>
 
@@ -106,7 +126,7 @@
 
   <!-- CLIENTS -->
 
-  <section class="about">
+  <section class="about" id="policy">
     <div class="container">
       <div class="about__main">
         <div class="swiper-container">
@@ -140,7 +160,7 @@
 
   <!-- ABOUT -->
 
-  <section class="auto">
+  <section class="auto" id="equipment">
     <div class="container">
       <div class="auto__row">
         <div class="auto__column1 column1">
@@ -204,7 +224,7 @@
 
   <!-- AUTO -->
 
-  <section class="order">
+  <section class="order" id="contract">
     <div class="container">
       <img src="../auto-rent/img/line.png" class="order__line" alt="line">
       <div class="order__row">
@@ -254,7 +274,7 @@
               class="footer__questions-span">бесплатная!</span></p>
         </div>
       </div>
-      <div class="footer__social">
+      <div class="footer__social" id="contacts">
         <div class="footer__media">
           <a href="https://www.vk.com/" class="footer__vk"><img src="img/vk.png"></a>
           <a href="https://www.youtube.com/" class="footer__yt"><img src="img/yt.png"></a>

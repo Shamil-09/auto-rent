@@ -448,6 +448,7 @@ img {
   background: black url("../img/main-image.jpg") no-repeat center/cover;
   height: 100vh;
   color: white;
+  position: relative;
 }
 
 .hero__content {
@@ -461,10 +462,6 @@ img {
   margin: 34px 20px 19px 20px;
 }
 
-.hero--rent {
-  display: block;
-}
-
 .hero__subtitle {
   color: #ddd;
   font-size: 25px;
@@ -472,46 +469,74 @@ img {
   max-width: 19.21rem;
 }
 
-.hero__text-low {
-  font-size: 2.4rem;
-  text-decoration: none;
-  color: white;
-  font-weight: 400;
+.hero__video {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: url("../img/main-video.png") no-repeat center/cover;
+  max-width: 1003px;
+  min-height: 506px;
+  margin: 0 auto -165px auto;
 }
 
-.hero__subtext-low {
-  font-size: 1rem;
-  color: #ddd;
+.hero__play {
+  margin: auto;
+  cursor: pointer;
+}
+
+.hero__video-text {
+  position: absolute;
+  top: 55px;
+  left: -55px;
+}
+
+.hero__video-title {
+  font-size: 36px;
+  color: white;
+  letter-spacing: 1.2px;
+}
+
+.hero__video-subtitle {
+  font-size: 15px;
+  color: white;
 }
 
 .places {
   background: #f7f4f2;
-  padding-bottom: 70rem;
+  padding-bottom: 14.14rem;
+  padding-top: 25.07rem;
 }
 
-.places__video {
+.places__text {
+  max-width: 275px;
+}
+
+.places__text-camera {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  min-height: 36.21rem;
-  background: black url("../img/main-video.png") no-repeat center;
 }
 
-.places__play {
-  margin: auto;
-  position: relative;
+.places__main-text {
+  font-size: 24px;
+  line-height: 30px;
 }
 
-.places__title {
-  font-size: 2.4rem;
-  text-decoration: none;
-  color: white;
-  font-weight: 400;
+.places__span {
+  color: #ff6600;
 }
 
-.places__subtitle {
-  font-size: 1rem;
-  color: #ddd;
+.places__second-text {
+  font-size: 16px;
+  margin: 0;
+  margin-right: 19px;
+}
+
+.places__camera {
+  width: 20px;
+  height: 12px;
+  margin-top: 2px;
 }
 
 .clients {
@@ -689,19 +714,18 @@ img {
 }
 
 .swiper-pagination {
-  padding-left: 7rem;
+  padding-right: 26rem;
 }
 
 .swiper-pagination-current {
-  font-size: 2rem;
-}
-
-.swiper-pagination-current::after {
-  color: #777;
+  font-size: 24px;
+  margin-right: 36px;
 }
 
 .swiper-pagination-total {
+  font-size: 13px;
   color: #777;
+  margin-left: 20px;
 }
 
 .swiper-button-prev {
@@ -1224,6 +1248,8 @@ img {
 
 .footer__yt {
   margin-right: 18px;
+  width: 54px;
+  height: 54px;
 }
 
 .footer__whatsup {
