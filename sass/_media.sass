@@ -1,20 +1,87 @@
-// HEADER
 
 @media screen and ( max-width: 1200px )
   html
     font-size: 12px
 
-  .container
-    padding-right: 5rem
-    padding-left: 5rem
-
 @media screen and ( max-width: 992px )
   html
     font-size: 10px
 
+// HEADER  ////////////////////////////////////////////////////////////////  
+
+@media screen and ( max-width: 992px )
+
+  .nav
+    &__item
+      &:hover
+        border-bottom: none
+
+@media screen and ( max-width: 750px )
+
+  .menu__nav
+    display: none
+
+  .logo
+    margin: auto
+    margin-bottom: 2rem
+
+// HERO  ////////////////////////////////////////////////////////////////  
+
+@media screen and ( max-width: 992px )
+
   .hero
     &__video-text
       display: none
+
+@media screen and ( max-width: 830px )
+
+  .hero
+    &__video
+      min-height: 26.14rem
+      max-width: 52rem
+    &__content
+      text-align: center
+      margin: auto
+    &__subtitle
+      margin: auto
+      margin-bottom: 2rem
+
+@media screen and ( max-width: 576px )
+
+  .hero
+    &__video
+      min-height: 200px
+
+// PLACES  ////////////////////////////////////////////////////////////////  
+
+@media screen and ( max-width: 992px )
+  .places
+    &__row
+      flex-direction: column
+      align-items: center
+    &__text
+      max-width: 438px
+      justify-content: center
+    &__span
+      display: flex
+      justify-content: center
+    &__text-camera
+      justify-content: center
+      margin-bottom: 4rem
+
+@media screen and ( max-width: 576px )
+  .places
+    padding-bottom: 9rem
+    &__text
+      max-width: 438px
+      justify-content: center
+    &__main-text
+      text-align: center
+      margin: 0 1rem
+
+    &__text-camera
+      justify-content: center
+      margin-bottom: 4rem
 
 // ABOUT  ////////////////////////////////////////////////////////////////  
 
@@ -126,6 +193,12 @@
 
 // FOOTER   ////////////////////////////////////////////////////////////////
 
+@media screen and ( max-width: 1200px )
+
+  .footer
+    &__info-contacts
+      max-width: 30rem
+
 @media screen and ( max-width: 992px )
 
   .footer
@@ -133,10 +206,10 @@
       flex-direction: column-reverse
       align-items: center
     &__questions
+      width: 535px
     &__info-contacts
       display: flex
-      width: 535px
-      justify-content: space-around
+      justify-content: space-between
 
 @media screen and ( max-width: 576px )
 
@@ -147,10 +220,10 @@
     &__questions
       padding: 26px 5rem
       margin-top: 3.5rem
-      background: url('../img/footer-frame.png') no-repeat center
     &__info-contacts
       display: flex
-      padding: 0 11rem
+      // padding: 0 11rem
+      // justify-content: space-between
     &__social
       display: flex
       flex-direction: column
