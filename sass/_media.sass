@@ -1,1 +1,169 @@
+// HEADER
 
+@media screen and ( max-width: 1200px )
+  html
+    font-size: 12px
+
+  .container
+    padding-right: 5rem
+    padding-left: 5rem
+
+@media screen and ( max-width: 992px )
+  html
+    font-size: 10px
+
+  .hero
+    &__video-text
+      display: none
+
+// ABOUT  ////////////////////////////////////////////////////////////////  
+
+@media screen and ( max-width: 992px )
+
+  .about
+    &__text
+      width: 19.71rem
+
+@media screen and ( max-width: 750px )
+  .about
+    padding-bottom: 6rem
+    &__main
+      flex-direction: column
+      align-items: center
+    &__info
+      text-align: center
+      margin: 0
+      max-width: 26rem
+    &__text
+      text-align: center
+      width: auto
+
+// AUTO ////////////////////////////////////////////////////////////////  
+
+@media screen and ( max-width: 992px )
+
+  .column3
+    &__options
+      &-icons
+        margin: auto 5px
+
+@media screen and ( max-width: 750px )
+
+  .auto
+    padding-bottom: 4rem
+    padding-top: 4rem
+    &__row
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__column1
+      align-items: center
+  .column2
+    &__paper
+      margin: auto
+      margin-bottom: 2rem
+    &__power
+      text-align: center
+    &__fuel-name
+      margin-right: 1rem
+  .column3
+    &__heart
+      margin: auto
+      margin-bottom: 3rem
+      text-align: center
+    &__text
+      text-align: center
+      margin: auto 25px
+
+// CLIENTS  ////////////////////////////////////////////////////////////////
+
+@media screen and ( max-width: 750px )
+  .clients
+    padding-bottom: 0
+    padding-top: 4rem
+    &__row
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__card
+      margin-bottom: 4rem
+    &__subtitle
+      margin-bottom: 6rem
+
+// ORDER  ////////////////////////////////////////////////////////////////
+
+@media screen and ( max-width: 992px )
+
+  .order
+    &__row
+      flex-direction: column
+      align-items: center
+    &__title
+      max-width: 32rem
+      margin-bottom: 5rem
+    &__rent
+      order: 1
+    &__days
+      order: 3
+    &__price
+      order: 2
+      margin-bottom: 5rem
+
+@media screen and ( max-width: 750px )
+
+  .order
+    padding-top: 4rem
+    &__line
+      display: none
+
+@media screen and ( max-width: 420px )
+
+  .order
+    &__title
+      max-width: 22rem
+      text-align: center
+      margin-bottom: 5rem
+
+// FOOTER   ////////////////////////////////////////////////////////////////
+
+@media screen and ( max-width: 992px )
+
+  .footer
+    &__row
+      flex-direction: column-reverse
+      align-items: center
+    &__questions
+    &__info-contacts
+      display: flex
+      width: 535px
+      justify-content: space-around
+
+@media screen and ( max-width: 576px )
+
+  .footer
+    &__row
+      flex-direction: column-reverse
+      align-items: center
+    &__questions
+      padding: 26px 5rem
+      margin-top: 3.5rem
+      background: url('../img/footer-frame.png') no-repeat center
+    &__info-contacts
+      display: flex
+      padding: 0 11rem
+    &__social
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__vk-hover
+      width: 40px
+      height: 40px
+    &__yt-hover
+      width: 40px
+      height: 40px
+    &__whatsup-hover
+      width: 40px
+      height: 40px
+    &__mail-hover
+      width: 40px
+      height: 40px

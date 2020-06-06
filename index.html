@@ -4,7 +4,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="" rel="stylesheet">
   <link href="css/animate.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <link href="css/animate.css" rel="stylesheet">
@@ -14,12 +13,18 @@
 </head>
 
 <body>
+  <!-- Yandex.Metrika counter -->
+  <script
+    type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(64402858, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true }); </script>
+  <noscript>
+    <div><img src="https://mc.yandex.ru/watch/64402858" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript> <!-- /Yandex.Metrika counter -->
 
   <section class="hero" id="navigation">
     <header class="header">
       <div class="menu header__menu">
         <div class="logo">
-          <img src="img/logo.png" class="logo__image" alt="горы">
+          <img href="#navigation" src="img/logo.png" class="logo__image go-to" alt="горы">
           <a href="#navigation" class="logo__title go-to">Ставрополье<span class="logo__subtitle">на
               ладони</span></a>
         </div>
@@ -61,16 +66,17 @@
           </div>
         </div>
         <div class="places__slider"></div>
-      </div>
-      <div class="swiper-container">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">Slide 1</div>
-          <div class="swiper-slide">Slide 2</div>
-          <div class="swiper-slide">Slide 3</div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/slider-video.png" alt="interior">
+            </div>
+            <div class="swiper-slide"><img src="img/slider-video.png" alt="interior"></div>
+            <div class="swiper-slide"><img src="img/slider-video.png" alt="interior"></div>
+          </div>
+          <!-- Add Arrows -->
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
         </div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
       </div>
     </div>
   </section>
@@ -86,8 +92,7 @@
       <div class="row clients__row">
         <div class="clients__card">
           <div class="clients-images1">
-            <img src="img/clients/client1.png" class="clients__face1" alt="">
-            <img src="img/clients/icon1.png" class="clients__cloud1" alt="">
+            <img src="img/clients/client1.png" class="clients__face1" alt="face">
           </div>
           <h3 class="clients__name1">Большаков О.В.</h3>
           <p class="clients__text1">Это было что-то невообразимое!! Если бы не этот автомобиль, наше путешествие бы не
@@ -95,8 +100,7 @@
         </div>
         <div class="clients__card">
           <div class="clients-images2">
-            <img src="img/clients/client2.png" class="clients__face2" alt="">
-            <img src="img/clients/icon2.png" class="clients__cloud2" alt="">
+            <img src="img/clients/client2.png" class="clients__face2" alt="face">
           </div>
           <h3 class="clients__name2">Волков Н.Б.</h3>
           <p class="clients__text2">Нет слов, одни эмоции... СПАСИБО вам ребята! Отличный автомобиль, цена и ваше
@@ -104,8 +108,7 @@
         </div>
         <div class="clients__card">
           <div class="clients-images3">
-            <img src="img/clients/client3.png" class="clients__face3" alt="">
-            <img src="img/clients/icon3.png" class="clients__cloud3" alt="">
+            <img src="img/clients/client3.png" class="clients__face3" alt="face">
           </div>
           <h3 class="clients__name3">Новиков К.Ф.</h3>
           <p class="clients__text3">Чтобы кто не говорил - без авто за две недели мало что можно увидеть когда
@@ -113,8 +116,7 @@
         </div>
         <div class="clients__card">
           <div class="clients-images3">
-            <img src="img/clients/client4.png" class="clients__face4" alt="">
-            <img src="img/clients/icon4.png" class="clients__cloud4" alt="">
+            <img src="img/clients/client4.png" class="clients__face4" alt="face">
           </div>
           <h3 class="clients__name4">Шубин Т.И.</h3>
           <p class="clients__text4">Все супер! Дастик ни разу не подвел, а спуск по дороге жизни на этом красавце -
@@ -131,10 +133,10 @@
       <div class="about__main">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/about/slide1.png"></div>
-            <div class="swiper-slide"><img src="img/about/slide2.png"></div>
-            <div class="swiper-slide"><img src="img/about/slide3.png"></div>
-            <div class="swiper-slide"><img src="img/about/slide4.png"></div>
+            <div class="swiper-slide"><img src="img/about/slide1.png" alt="interior"></div>
+            <div class="swiper-slide"><img src="img/about/slide2.png" alt="interior"></div>
+            <div class="swiper-slide"><img src="img/about/slide3.png" alt="interior"></div>
+            <div class="swiper-slide"><img src="img/about/slide4.png" alt="interior"></div>
           </div>
           <!-- Add Pagination -->
           <div class="swiper-pagination swiper-pagination-fraction">
@@ -171,7 +173,7 @@
               <h4 class="transmition__text">Коробка передач</h4>
             </div>
             <div class="transmition__right">
-              <img src="img/auto/trans.png" class="transmition__icon">
+              <img src="img/auto/trans.png" class="transmition__icon" alt="transmition">
               <h4 class="transmition__value">AT</h4>
               <p class="transmition__value2">5 ст.</p>
             </div>
@@ -181,7 +183,7 @@
               <h4 class="mileage__text">Чистый пробег</h4>
             </div>
             <div class="mileage__right">
-              <img src="img/auto/mileage.png" class="mileage__icon">
+              <img src="img/auto/mileage.png" class="mileage__icon" alt="mileage">
               <h4 class="mileage__value">+100k</h4>
               <p class="mileage__value2">2020 г.</p>
             </div>
@@ -206,13 +208,13 @@
             <h4 class="column3__year-number">Н.В.</h4>
           </div>
           <div class="column3__options options">
-            <img src="img/auto/people.png">
-            <h3>5</h3>
-            <img src="img/auto/door.png">
-            <h3>4</h3>
-            <img src="img/auto/snow.png">
+            <img src="img/auto/people.png" alt="people">
+            <h3 class="column3__options-icons">5</h3>
+            <img src="img/auto/door.png" alt="door">
+            <h3 class="column3__options-icons">4</h3>
+            <img src="img/auto/snow.png" alt="snow">
           </div>
-          <img src="img/auto/heart.png" class="column3__heart">
+          <img src="img/auto/heart.png" class="column3__heart" alt="heart">
           <h2 class="column3__main-text">Укомплектуем дополнительно</h2>
           <p class="column3__text">Мы очень
             любим наш автомобиль и тщательно ухаживаем за ним, но несмотря на это не придираемся к каждой незначительной
@@ -231,12 +233,12 @@
         <div class="order__rent">
           <h3 class="order__title">Заказать автомобиль в аренду</h3>
         </div>
-        <form action="send.php" method="POST" class="order__days">
-          <!-- <select name="cars" class="order__input">
-            <option value="10days" class="order__input-main">10 дней <span class="order__input-span">-20%</span>
-            </option>
-          </select> -->
-          <input type="text" name="order__input" class="order__input" id="order__input" placeholder="На сколько дней?">
+        <form action="send.php" method="POST" onsubmit="ym('64402858', 'reachGoal', 'send-form'); return true;"
+          class="order__days">
+          <select type="text" name="order__input" class="order__input" id="order__input">
+            <option value="10" name="order__input">10 дней</option>
+            <option value="20" name="order__input">20 дней</option>
+          </select>
           <input type="tel" name="order__phone" class="order__phone" id="order__phone" placeholder="Ваш телефон">
           <button class="order__button">Заказать</button>
           <a href="" class="order__promo">А у меня есть промокод!</a>
@@ -257,17 +259,19 @@
   <section class="footer">
     <div class="container">
       <div class="footer__row">
-        <div class="footer__info">
-          <h4 class="footer__info-title">Реквизиты</h4>
-          <p class="footer__info-text">ИП Пупкин Василий
-            ОГРН: 1053601053600
-            ИНН: 3664036640</p>
-        </div>
-        <div class="footer__contacts">
-          <h4 class="footer__contacts-title">Контакты</h4>
-          <a href="" class="footer__contacts-email">pupkinvvv@example.ru</a>
-          <a href="" class="footer__contacts-agreement">Договор аренды</a>
-          <a href="" class="footer__contacts-conditions">Условия</a>
+        <div class="footer__info-contacts">
+          <div class="footer__info">
+            <h4 class="footer__info-title">Реквизиты</h4>
+            <p class="footer__info-text">ИП Пупкин Василий
+              ОГРН: 1053601053600
+              ИНН: 3664036640</p>
+          </div>
+          <div class="footer__contacts">
+            <h4 class="footer__contacts-title">Контакты</h4>
+            <a href="mailto:pupkinvvv@example.ru" class="footer__contacts-email">pupkinvvv@example.ru</a>
+            <a href="#contract" class="footer__contacts-agreement go-to">Договор аренды</a>
+            <a href="#policy" class="footer__contacts-conditions go-to">Условия</a>
+          </div>
         </div>
         <div class="footer__questions">
           <h4 class="footer__questions-title">А как осуществляется доставка и сдача автомобиля?</h4>
@@ -277,10 +281,13 @@
       </div>
       <div class="footer__social" id="contacts">
         <div class="footer__media">
-          <a href="https://www.vk.com/" class="footer__vk"><img src="img/vk.png"></a>
-          <a href="https://www.youtube.com/" class="footer__yt"><img src="img/yt.png"></a>
-          <a href="https://www.whatsapp.com/" class="footer__whatsup"><img src="img/wh.png"></a>
-          <a href="https://www.mail.ru/" class="footer__mail"><img src="img/mail.png"></a>
+          <a href="https://www.vk.com/" class="footer__vk"><img src="img/vk.png" class="footer__vk-hover" alt="vk"></a>
+          <a href="https://www.youtube.com/" class="footer__yt"><img src="img/yt.png" class="footer__yt-hover"
+              alt="youtube"></a>
+          <a href="https://www.whatsapp.com/" class="footer__whatsup"><img src="img/wh.png"
+              class="footer__whatsup-hover" alt="whatsup"></a>
+          <a href="https://www.mail.ru/" class="footer__mail"><img src="img/mail.png" class="footer__mail-hover"
+              alt="mail"></a>
         </div>
         <div class="footer__license">
           <p class="footer__license-text">© 2020 Все права защищены</p>

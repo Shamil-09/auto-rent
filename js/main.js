@@ -50,11 +50,6 @@ $(document).ready(function () {
     errorClass: "invalid",
     errorElement: "div",
     rules: {
-      order__input: {
-        required: true,
-        minlength: 1,
-        maxlength: 3
-      },
       order__phone: "required",
       order__input: "required",
     },
@@ -63,7 +58,6 @@ $(document).ready(function () {
     messages: {
       order__input: {
         required: "Введите количество дней",
-        maxlength: "Число не должно превышать 2 цифр"
       },
       order__phone: "Телефон обязателен",
     },
