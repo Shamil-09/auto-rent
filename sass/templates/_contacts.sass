@@ -14,6 +14,8 @@
   &__info
     margin-top: 5.78rem
     max-width: 9.86rem
+    &-contacts
+      max-width: 38rem
     &-title
       font-size: 16px
       margin: 0
@@ -38,8 +40,8 @@
       &:hover
         color: #17bebb
   &__questions
-    width: 53.5rem
-    height: 19rem
+    width: 535px
+    height: 190px
     padding: 26px 0
     margin-top: 3.5rem
     background: url('../img/footer-frame.png') no-repeat center
@@ -94,3 +96,58 @@
     &-text
       font-size: 13px
       color: #777
+
+.contacts__swiper-container
+  margin-left: auto
+  margin-right: auto
+  position: relative
+  overflow: hidden
+  list-style: none
+  padding: 0
+  z-index: 1
+
+.contacts__swiper-button-prev
+  right: 6.6rem
+  background: url(../img/contacts-prev.svg) no-repeat center/cover
+  position: absolute
+  bottom: 0.8rem
+  width: 12px
+  height: 12px
+  overflow: visible
+  z-index: 10
+
+.contacts__swiper-button-next
+  right: 3.4rem
+  background: url(../img/contacts-next.svg) no-repeat center/cover
+  position: absolute
+  bottom: 0.8rem
+  width: 12px
+  height: 12px
+  overflow: visible
+  z-index: 10
+
+.contacts__pagin
+  position: absolute
+  right: 3.4rem
+  top: 0.7rem
+  display: flex
+  align-items: center
+  margin-left: 0
+  margin-top: 0
+
+.contacts__total
+  color: #777777
+  font-size: 1.18rem
+  margin-top: -8px
+
+.contacts__slash
+  color: #777777
+  font-size: 1.08rem
+  margin-left: 1.5rem
+  margin-top: -8px
+
+.contacts__current
+  color: #fff
+  font-size: 2rem
+  font-weight: bold
+  margin-left: 3.5rem

@@ -4,9 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="css/animate.css" rel="stylesheet">
   <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
-  <link href="css/animate.css" rel="stylesheet">
+  <link rel="preload" href="css/swiper.min.css" as="style">
+  <link rel="preload" href="css/jquery.fancybox.min.css" as="style">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Аренда авто</title>
   <link rel="icon" href="img/favicon.png" type="image/png">
@@ -28,7 +30,13 @@
           <a href="#navigation" class="logo__title go-to">Ставрополье<span class="logo__subtitle">на
               ладони</span></a>
         </div>
-        <div class="nav menu__nav">
+
+        <div class="header__burger">
+          <span></span>
+        </div>
+
+
+        <div class="header__menu menu__nav">
           <a href="#policy" class="nav__item go-to">Условия</a>
           <a href="#equipment" class="nav__item go-to">Комплектация автомобиля</a>
           <a href="#contract" class="nav__item go-to">Договор аренды</a>
@@ -65,18 +73,42 @@
             <img src="img/camera.png" class="places__camera" alt="camera">
           </div>
         </div>
-        <div class="places__slider"></div>
-        <div class="swiper-container">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/slider-video.png" alt="interior">
+
+        <div class="places__slide">
+          <!-- Slider main container -->
+          <div class="swiper-container places__swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper places__swiper-wrapper">
+              <!-- Slides -->
+              places
+              <div class="swiper-slide places__swiper-slide">
+                <a class="places__slide-video" data-fancybox href="https://www.youtube.com/watch?v=47umTmxq2-s">
+                  <div class="places__slide-video-image" id="video-1">
+                    <img src="img/video/play-slide.svg" alt="play">
+                  </div>
+                  <p class="places__slide-video-text">Цейский заповедник близ Северной Осетии</p>
+                </a>
+                <!-- /.showplace__slide-video -->
+              </div>
+              <div class="swiper-slide places__swiper-slide">
+                <a class="places__slide-video" data-fancybox href="https://www.youtube.com/watch?v=47umTmxq2-s">
+                  <div class="places__slide-video-image" id="video-2">
+                    <img src="img/video/play-slide.svg" alt="play">
+                  </div>
+                  <p class="places__slide-video-text">Незабываемый маршрут в Ингушский заповедник: Боевые башни
+                    Эрзи
+                  </p>
+                </a>
+                <!-- /.showplace__slide-video -->
+              </div>
+
             </div>
-            <div class="swiper-slide"><img src="img/slider-video.png" alt="interior"></div>
-            <div class="swiper-slide"><img src="img/slider-video.png" alt="interior"></div>
+            <!-- If we need navigation buttons -->
           </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-prev showplace__swiper-button-prev"></div>
+          <div class="swiper-button-next showplace__swiper-button-next"></div>
         </div>
+
       </div>
     </div>
   </section>
@@ -131,21 +163,21 @@
   <section class="about" id="policy">
     <div class="container">
       <div class="about__main">
-        <div class="swiper-container">
+        <div class="swiper-container about__swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="img/about/slide1.png" alt="interior"></div>
-            <div class="swiper-slide"><img src="img/about/slide2.png" alt="interior"></div>
-            <div class="swiper-slide"><img src="img/about/slide3.png" alt="interior"></div>
-            <div class="swiper-slide"><img src="img/about/slide4.png" alt="interior"></div>
+            <div class="swiper-slide about__swiper-slide"><img src="img/about/slide1.png" alt="interior"></div>
+            <div class="swiper-slide about__swiper-slide"><img src="img/about/slide2.png" alt="interior"></div>
+            <div class="swiper-slide about__swiper-slide"><img src="img/about/slide3.png" alt="interior"></div>
+            <div class="swiper-slide about__swiper-slide"><img src="img/about/slide4.png" alt="interior"></div>
           </div>
-          <!-- Add Pagination -->
-          <div class="swiper-pagination swiper-pagination-fraction">
-            <span class="swiper-pagination-current">01</span>
-            <span class="swiper-pagination-total">4</span>
+
+          <div class="swiper-pagination swiper-pagination-fraction about__swiper-pagination">
+            <span class="swiper-pagination-current about__swiper-pagination-current">01</span>
+            <span class="swiper-pagination-total about__swiper-pagination-total">4</span>
           </div>
-          <!-- Add Arrows -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+
+          <div class="swiper-button-next about__swiper-button-next"></div>
+          <div class="swiper-button-prev about__swiper-button-prev"></div>
         </div>
         <div class="about__info">
           <h2 class="about__title">О нашем автомобиле</h2>
@@ -274,9 +306,28 @@
           </div>
         </div>
         <div class="footer__questions">
-          <h4 class="footer__questions-title">А как осуществляется доставка и сдача автомобиля?</h4>
-          <p class="footer__questions-text">Доставка и сдача в аэропорт Минеральных Вод <span
-              class="footer__questions-span">бесплатная!</span></p>
+          <!-- Slider main container -->
+          <div class="swiper-container contacts__swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper contacts__swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide contacts__swiper-slide">
+                <p class="footer__questions-title">А как осуществляется доставка и сдача автомобиля?</p>
+                <p class="footer__questions-text">
+                  Доставка и сдача в аэропорт Минеральных Вод <span class="footer__questions-span">бесплатная!</span>
+                </p>
+              </div>
+            </div>
+            <!-- If we need navigation buttons -->
+            <div class="contacts__swiper-button-prev"></div>
+            <div class="contacts__swiper-button-next"></div>
+
+            <div class="contacts__pagin">
+              <span class="contacts__total">04</span>
+              <span class="contacts__slash">/</span>
+              <span class="contacts__current">01</span>
+            </div>
+          </div>
         </div>
       </div>
       <div class="footer__social" id="contacts">
@@ -298,10 +349,20 @@
 
   <!-- CONTACTS -->
 
+  <div class="modal">
+    <div class="modal__dialog">
+      <button class="modal__close"></button>
+      <h2 class="section-title modal__title">Спасибо за заявку!</h2>
+      <p class="modal__subtitle">Мы свяжемся с вами в течение 30 минут!</p>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"
     integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-  <script src="js/wow.min.js"></script>
+  <!-- <script src="https://unpkg.com/swiper/js/swiper.min.js"></script> -->
+  <script src="js/swiper.min.js"></script>
+  <script src="js/jquery-3.5.1.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/jquery.validate.min.js"></script>
   <script src="js/jquery.mask.min.js"></script>
   <script src="js/main.js"></script>
