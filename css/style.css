@@ -807,6 +807,11 @@ html, body {
   line-height: 23px;
 }
 
+.clients__text4-span {
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
 .clients__cloud4 {
   position: absolute;
   margin: 41px -46px;
@@ -1181,7 +1186,8 @@ html, body {
 .order {
   color: white;
   padding-bottom: 8.07rem;
-  background: url("../img/screen.png") no-repeat center;
+  margin-top: -1px;
+  background: #222 url("../img/screen.png") no-repeat center;
 }
 
 .order__line {
@@ -1325,7 +1331,8 @@ html, body {
 
 .footer {
   padding-bottom: 5.78rem;
-  background: url("../img/screen.png") no-repeat center;
+  margin-top: -1px;
+  background: #222 url("../img/screen.png") no-repeat center;
   color: white;
 }
 
@@ -1350,10 +1357,6 @@ html, body {
   margin-top: 5.78rem;
   max-width: 9.86rem;
   margin-right: 11.35rem;
-}
-
-.footer__info-contacts {
-  max-width: 38rem;
 }
 
 .footer__info-contacts {
@@ -1403,10 +1406,6 @@ html, body {
 
 .footer__questions {
   width: 535px;
-<<<<<<< HEAD
-=======
-  height: 190px;
->>>>>>> 4ca88e920a384abb599d888f52553e7da45ed2fb
   padding: 26px 0;
   margin-top: 3.5rem;
   background: url("../img/footer-frame.png") no-repeat center;
@@ -1502,6 +1501,22 @@ html, body {
   z-index: 1;
 }
 
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
 .contacts__swiper-button-prev {
   right: 6.6rem;
   background: url(../img/contacts-prev.svg) no-repeat center/cover;
@@ -1558,6 +1573,15 @@ html, body {
   margin-left: 3.5rem;
 }
 
+.swiper-container .swiper-notification {
+  position: absolute;
+  left: 0;
+  top: 0;
+  pointer-events: none;
+  opacity: 0;
+  z-index: -1000;
+}
+
 @media screen and (max-width: 1200px) {
   html {
     font-size: 12px;
@@ -1570,17 +1594,7 @@ html, body {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 830px) {
-=======
-@media screen and (max-width: 992px) {
-  .nav__item:hover {
-    border-bottom: none;
-  }
-}
-
-@media screen and (max-width: 750px) {
->>>>>>> 4ca88e920a384abb599d888f52553e7da45ed2fb
   .menu__nav {
     display: none;
   }
@@ -1604,10 +1618,7 @@ html, body {
   .hero__content {
     text-align: center;
     margin: auto;
-<<<<<<< HEAD
     margin-bottom: 8rem;
-=======
->>>>>>> 4ca88e920a384abb599d888f52553e7da45ed2fb
   }
   .hero__subtitle {
     margin: auto;
@@ -1621,15 +1632,12 @@ html, body {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 375px) {
   .hero__video {
     min-height: 170px;
   }
 }
 
-=======
->>>>>>> 4ca88e920a384abb599d888f52553e7da45ed2fb
 @media screen and (max-width: 992px) {
   .places__row {
     -webkit-box-orient: vertical;
@@ -1662,15 +1670,12 @@ html, body {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (max-width: 830px) {
   .places {
     padding-top: 9rem;
   }
 }
 
-=======
->>>>>>> 4ca88e920a384abb599d888f52553e7da45ed2fb
 @media screen and (max-width: 576px) {
   .places {
     padding-bottom: 9rem;
@@ -1693,7 +1698,6 @@ html, body {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 992px) {
   .about {
     padding-right: 2rem;
@@ -1701,8 +1705,6 @@ html, body {
   }
 }
 
-=======
->>>>>>> 4ca88e920a384abb599d888f52553e7da45ed2fb
 @media screen and (max-width: 992px) {
   .about__text {
     width: 19.71rem;
@@ -1748,6 +1750,7 @@ html, body {
 @media screen and (max-width: 475px) {
   .about__swiper-container {
     max-width: 30rem;
+    margin-left: -1rem;
   }
 }
 
@@ -1889,7 +1892,6 @@ html, body {
   }
 }
 
-<<<<<<< HEAD
 @media screen and (min-width: 992px) {
   .footer {
     padding-right: 2rem;
@@ -1906,8 +1908,6 @@ html, body {
   }
 }
 
-=======
->>>>>>> 4ca88e920a384abb599d888f52553e7da45ed2fb
 @media screen and (max-width: 1200px) {
   .footer__info-contacts {
     max-width: 30rem;
@@ -1938,7 +1938,6 @@ html, body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-<<<<<<< HEAD
   }
   .footer__contacts-email:hover, .footer__contacts-agreement:hover, .footer__contacts-conditions:hover {
     color: #777;
@@ -1946,8 +1945,6 @@ html, body {
   }
   .footer__vk-hover:hover, .footer__whatsup-hover:hover, .footer__mail-hover:hover, .footer__yt-hover:hover {
     background: none;
-=======
->>>>>>> 4ca88e920a384abb599d888f52553e7da45ed2fb
   }
 }
 
@@ -1964,10 +1961,7 @@ html, body {
   .footer__questions {
     padding: 26px 8rem;
     margin-top: 3.5rem;
-<<<<<<< HEAD
     background: none;
-=======
->>>>>>> 4ca88e920a384abb599d888f52553e7da45ed2fb
   }
   .footer__info-contacts {
     display: -webkit-box;

@@ -16,8 +16,7 @@
 
 <body>
   <!-- Yandex.Metrika counter -->
-  <script
-    type="text/javascript"> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(64402858, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true }); </script>
+  <script> (function (m, e, t, r, i, k, a) { m[i] = m[i] || function () { (m[i].a = m[i].a || []).push(arguments) }; m[i].l = 1 * new Date(); k = e.createElement(t), a = e.getElementsByTagName(t)[0], k.async = 1, k.src = r, a.parentNode.insertBefore(k, a) })(window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(64402858, "init", { clickmap: true, trackLinks: true, accurateTrackBounce: true, webvisor: true }); </script>
   <noscript>
     <div><img src="https://mc.yandex.ru/watch/64402858" style="position:absolute; left:-9999px;" alt="" /></div>
   </noscript> <!-- /Yandex.Metrika counter -->
@@ -26,7 +25,7 @@
     <header class="header">
       <div class="menu header__menu">
         <div class="logo">
-          <img href="#navigation" src="img/logo.png" class="logo__image go-to" alt="горы">
+          <img src="img/logo.png" class="logo__image go-to" alt="горы">
           <a href="#navigation" class="logo__title go-to">Ставрополье<span class="logo__subtitle">на
               ладони</span></a>
         </div>
@@ -66,8 +65,8 @@
     <div class="container">
       <div class="places__row">
         <div class="places__text">
-          <p class="places__main-text">Интересные места Ставропольского края <span class="places__span">эксклюзивно для
-              вас!</span></p>
+          <h2 class="places__main-text">Интересные места Ставропольского края <span class="places__span">эксклюзивно для
+              вас!</span></h2>
           <div class="places__text-camera">
             <a href="https://www.youtube.com/" class="places__second-text">Все видео</a>
             <img src="img/camera.png" class="places__camera" alt="camera">
@@ -151,7 +150,8 @@
             <img src="img/clients/client4.png" class="clients__face4" alt="face">
           </div>
           <h3 class="clients__name4">Шубин Т.И.</h3>
-          <p class="clients__text4">Все супер! Дастик ни разу не подвел, а спуск по дороге жизни на этом красавце -
+          <p class="clients__text4">Все супер! Дастик ни разу не подвел, а <span class="clients__text4-span">спуск по
+              дороге жизни</span> на этом красавце -
             просто на всю жизнь...</p>
         </div>
       </div>
@@ -270,12 +270,12 @@
         </div>
         <form action="send.php" method="POST" onsubmit="ym('64402858', 'reachGoal', 'send-form'); return true;"
           class="order__days">
-          <select type="text" name="order__input" class="order__input" id="order__input">
-            <option value="20" name="order__input">10 дней</option>
-            <option value="20" name="order__input">15 дней</option>
-            <option value="20" name="order__input">20 дней</option>
-            <option value="20" name="order__input">20 дней</option>
-            <option value="20" name="order__input">30 дней</option>
+          <select name="order__input" class="order__input" id="order__input">
+            <option value="20" id="10">10 дней</option>
+            <option value="20" id="15">15 дней</option>
+            <option value="20" id="20">20 дней</option>
+            <option value="20" id="25">25 дней</option>
+            <option value="20" id="30">30 дней</option>
           </select>
           <input type="tel" name="order__phone" class="order__phone" id="order__phone" placeholder="Ваш телефон">
           <button class="order__button">Заказать</button>
@@ -323,6 +323,24 @@
                   Доставка и сдача в аэропорт Минеральных Вод <span class="footer__questions-span">бесплатная!</span>
                 </p>
               </div>
+              <div class="swiper-slide contacts__swiper-slide">
+                <p class="footer__questions-title">А как осуществляется доставка и сдача автомобиля?</p>
+                <p class="footer__questions-text">
+                  Доставка и сдача в аэропорт Минеральных Вод <span class="footer__questions-span">бесплатная!</span>
+                </p>
+              </div>
+              <div class="swiper-slide contacts__swiper-slide">
+                <p class="footer__questions-title">А как осуществляется доставка и сдача автомобиля?</p>
+                <p class="footer__questions-text">
+                  Доставка и сдача в аэропорт Минеральных Вод <span class="footer__questions-span">бесплатная!</span>
+                </p>
+              </div>
+              <div class="swiper-slide contacts__swiper-slide">
+                <p class="footer__questions-title">А как осуществляется доставка и сдача автомобиля?</p>
+                <p class="footer__questions-text">
+                  Доставка и сдача в аэропорт Минеральных Вод <span class="footer__questions-span">бесплатная!</span>
+                </p>
+              </div>
             </div>
             <!-- If we need navigation buttons -->
             <div class="contacts__swiper-button-prev"></div>
@@ -343,7 +361,7 @@
               alt="youtube"></a>
           <a href="https://www.whatsapp.com/" class="footer__whatsup"><img src="img/wh.png"
               class="footer__whatsup-hover" alt="whatsup"></a>
-          <a href="https://www.mail.ru/" class="footer__mail"><img src="img/mail.png" class="footer__mail-hover"
+          <a href="mailto:pupkinvvv@example.ru" class="footer__mail"><img src="img/mail.png" class="footer__mail-hover"
               alt="mail"></a>
         </div>
         <div class="footer__license">

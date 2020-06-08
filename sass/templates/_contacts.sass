@@ -1,6 +1,7 @@
 .footer
   padding-bottom: 5.78rem
-  background: url('../img/screen.png') no-repeat center
+  margin-top: -1px
+  background: #222 url('../img/screen.png') no-repeat center
   color: white
   &__row
     display: flex
@@ -106,6 +107,15 @@
   padding: 0
   z-index: 1
 
+.swiper-wrapper
+  position: relative
+  width: 100%
+  height: 100%
+  z-index: 1
+  display: flex
+  transition-property: transform
+  box-sizing: content-box
+
 .contacts__swiper-button-prev
   right: 6.6rem
   background: url(../img/contacts-prev.svg) no-repeat center/cover
@@ -151,3 +161,11 @@
   font-size: 2rem
   font-weight: bold
   margin-left: 3.5rem
+
+.swiper-container .swiper-notification
+  position: absolute
+  left: 0
+  top: 0
+  pointer-events: none
+  opacity: 0
+  z-index: -1000
