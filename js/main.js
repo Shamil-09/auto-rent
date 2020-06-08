@@ -176,16 +176,22 @@ $(document).ready(function () {
     errorClass: "invalid",
     errorElement: "div",
     rules: {
-      order__phone: "required",
-      order__input: "required",
+      //   order__phone: "required",
+      //   order__input: "required",
+      // },
+      order__phone: {
+        required: true,
+        minlength: 16,
+      },
     },
 
-    // правило сообщения
+
     messages: {
-      order__input: {
-        required: "Введите количество дней",
+      order__phone: {
+        required: "Телефон обязателен",
+        minlength: "Введите все цифры",
       },
-      order__phone: "Телефон обязателен",
+
     },
     submitHandler: function (form) {
       $.ajax({
@@ -206,4 +212,5 @@ $(document).ready(function () {
 
 
   });
+
 });

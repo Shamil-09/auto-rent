@@ -69,7 +69,7 @@
           <p class="places__main-text">Интересные места Ставропольского края <span class="places__span">эксклюзивно для
               вас!</span></p>
           <div class="places__text-camera">
-            <p class="places__second-text">Все видео</p>
+            <a href="https://www.youtube.com/" class="places__second-text">Все видео</a>
             <img src="img/camera.png" class="places__camera" alt="camera">
           </div>
         </div>
@@ -171,13 +171,16 @@
             <div class="swiper-slide about__swiper-slide"><img src="img/about/slide4.png" alt="interior"></div>
           </div>
 
-          <div class="swiper-pagination swiper-pagination-fraction about__swiper-pagination">
-            <span class="swiper-pagination-current about__swiper-pagination-current">01</span>
-            <span class="swiper-pagination-total about__swiper-pagination-total">4</span>
-          </div>
-
           <div class="swiper-button-next about__swiper-button-next"></div>
           <div class="swiper-button-prev about__swiper-button-prev"></div>
+
+          <!-- <div class="swiper-pagination swiper-pagination-fraction about__swiper-pagination">
+            <span class="swiper-pagination-current about__swiper-pagination-current">01</span>
+            <span class="swiper-pagination-slash about__swiper-pagination-slash">/</span>
+            <span class="swiper-pagination-total about__swiper-pagination-total">4</span>
+          </div> -->
+
+
         </div>
         <div class="about__info">
           <h2 class="about__title">О нашем автомобиле</h2>
@@ -268,8 +271,11 @@
         <form action="send.php" method="POST" onsubmit="ym('64402858', 'reachGoal', 'send-form'); return true;"
           class="order__days">
           <select type="text" name="order__input" class="order__input" id="order__input">
-            <option value="10" name="order__input">10 дней</option>
+            <option value="20" name="order__input">10 дней</option>
+            <option value="20" name="order__input">15 дней</option>
             <option value="20" name="order__input">20 дней</option>
+            <option value="20" name="order__input">20 дней</option>
+            <option value="20" name="order__input">30 дней</option>
           </select>
           <input type="tel" name="order__phone" class="order__phone" id="order__phone" placeholder="Ваш телефон">
           <button class="order__button">Заказать</button>

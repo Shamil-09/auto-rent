@@ -9,14 +9,7 @@
 
 // HEADER  ////////////////////////////////////////////////////////////////  
 
-@media screen and ( max-width: 992px )
-
-  .nav
-    &__item
-      &:hover
-        border-bottom: none
-
-@media screen and ( max-width: 750px )
+@media screen and ( max-width: 830px )
 
   .menu__nav
     display: none
@@ -96,11 +89,21 @@
 
 // ABOUT  ////////////////////////////////////////////////////////////////  
 
+@media screen and ( min-width: 992px )
+  .about
+    padding-right: 2rem
+    padding-left: 2rem
+
 @media screen and ( max-width: 992px )
 
   .about
     &__text
       width: 19.71rem
+
+@media screen and ( max-width: 850px )
+  .about
+    &__main
+      margin-left: 2rem
 
 @media screen and ( max-width: 750px )
   .about
@@ -115,6 +118,11 @@
     &__text
       text-align: center
       width: auto
+
+@media screen and ( max-width: 550px )
+
+  .about__swiper-container
+    max-width: 40rem
 
 @media screen and ( max-width: 475px )
 
@@ -158,7 +166,17 @@
       text-align: center
       margin: auto 25px
 
+@media screen and ( max-width: 750px )
+
+  .auto
+    background: url(../img/screen.png) no-repeat center
+
 // CLIENTS  ////////////////////////////////////////////////////////////////
+
+@media screen and ( max-width: 992px )
+  .clients
+    &__row
+      padding-left: 2rem
 
 @media screen and ( max-width: 750px )
   .clients
@@ -174,6 +192,11 @@
       margin-bottom: 6rem
 
 // ORDER  ////////////////////////////////////////////////////////////////
+
+@media screen and ( min-width: 992px )
+  .order
+    padding-right: 2rem
+    padding-left: 2rem
 
 @media screen and ( max-width: 992px )
 
@@ -209,6 +232,18 @@
 
 // FOOTER   ////////////////////////////////////////////////////////////////
 
+@media screen and ( min-width: 992px )
+  .footer
+    padding-right: 2rem
+    padding-left: 2rem
+    &__questions
+      height: 190px
+
+@media screen and ( min-width: 1200px )
+  .footer
+    &__questions
+      height: 215px
+
 @media screen and ( max-width: 1200px )
 
   .footer
@@ -218,6 +253,8 @@
 @media screen and ( max-width: 992px )
 
   .footer
+    padding-right: 2rem
+    padding-left: 2rem
     &__row
       flex-direction: column-reverse
       align-items: center
@@ -226,6 +263,15 @@
     &__info-contacts
       display: flex
       justify-content: space-between
+    &__contacts
+      &-email, &-agreement, &-conditions
+        &:hover
+          color: #777
+          text-decoration: none
+    &__vk, &__whatsup, &__mail, &__yt
+      &-hover
+        &:hover
+          background: none
 
 @media screen and ( max-width: 576px )
 
@@ -257,3 +303,22 @@
     &__mail-hover
       width: 40px
       height: 40px
+    &__info
+      margin-right: 5.35rem
+
+  // HOVERS OFF
+
+@media screen and ( max-width: 992px )
+
+  .nav
+    &__item
+      &:hover
+        border-bottom: none
+
+  .order
+    &__button
+      &:hover
+        background-color: #ff6600
+    &__promo
+      &:hover
+        color: #777
