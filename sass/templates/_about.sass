@@ -1,61 +1,127 @@
-.about
-  background: #f7f4f2
-  padding-bottom: 14.14rem
-  padding-top: 14.14rem
-  &__main
-    display: flex
-    justify-content: space-between
-  &__info
-    max-width: 21.71rem
-    margin-left: 10.35rem
-  &__title
-    font-size: 2.6rem
-    font-family: 'Open Sans', sans-serif
-    font-weight: 400
-    margin: 0
-    margin-bottom: 8rem
-  &__subtitle
-    font-size: 1.5rem
-    font-family: 'Open Sans', sans-serif
-    font-weight: 400
-    margin-bottom: 3.57
-  &__text
-    line-height: 1.6rem
+// .section
+//   padding-top: 8.9rem
+//   padding-bottom: 11.5rem
 
-    &-low
-      color: #777
-      font-size: 11px
-  &__swiper-container
-    max-width: 50.28rem
-    max-height: 31rem
+.about-auto
+  background-color: #f7f4f2
+  padding-top: 16.4rem
+  padding-bottom: 9.2rem
+  &__wrapp
+    position: relative
+    max-width: 1291px
+    width: 90%
+    margin: 0 auto
+
+  &__section-title
+    position: absolute
+    right: auto
+    top: -6px
+    margin-left: 69rem
+
+  &__heading
+    color: #000
+    font-family: 'Open Sans Bold', sans-serif
+    font-size: 3.07rem
+    line-height: 4rem
+    letter-spacing: -0.48px
+    max-width: 16.66667rem
+    margin: 0
+    margin-bottom: 1.3rem
+
+  &__body
+    position: relative
+
   &__swiper-slide
-    max-width: 100%
-  &__swiper-pagination
-    padding-right: 26rem
-    margin-bottom: -2rem
-  &__swiper-pagination-current
-    font-size: 24px
-    margin-right: 36px
-  &__swiper-pagination-slash
-    font-size: 24px
-    margin-right:
-  &__swiper-pagination-total
-    font-size: 13px
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: end
+    -ms-flex-align: end
+    align-items: flex-end
+
+  &__swiper-button-prev
+    left: -3.6rem
+
+  &__swiper-button-next
+    right: auto
+    margin-left: 57.7rem
+
+  &__image
+    width: 58.5rem
+    height: 32.91667rem
+    -o-object-fit: cover
+    object-fit: cover
+    -o-object-position: center
+    object-position: center
+    margin-right: 15.83333rem
+
+  &__pagin
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-align: end
+    -ms-flex-align: end
+    align-items: flex-end
+    margin-left: 8.2rem
+    margin-top: 3.9rem
+
+  &__current
+    font-size: 2rem
+    line-height: 3rem
+    font-weight: bold
+    margin-right: 3.5rem
+
+  &__slash
+    color: #777777
+    font-size: 1.08333rem
+    line-height: 2rem
+    margin-right: 1.5rem
+
+  &__total
+    color: #777777
+    font-size: 1.18333rem
+    line-height: 2.4rem
+
+.description
+  max-width: 25.3rem
+
+  &__title
+    font-size: 2rem
+    line-height: 3rem
+    font-weight: bold
+    margin-top: 0
+    margin-bottom: 2.8rem
+
+  &__text
+    color: #444444
+    font-size: 1.34rem
+    line-height: 2.4rem
+    margin-top: 0
+    margin-bottom: 1.2rem
+
+  &__text--posc
     color: #777
-    margin-left: 20px
-  &__swiper
-    &-button
-      &-prev
-        background: url('../img/about/arrow-prev.svg') no-repeat center
-        background-size: 54px
-        width: 54px
-        height: 54px
-        &::after
-          display: none
-      &-next
-        background: url('../img/about/arrow-next.svg') no-repeat center
-        background-size: 54px
-        width: 54px
-        height: 54px
-        &::after
-          display: none
+    font-size: 1.092rem
+    line-height: 2.03333rem
+
+.swiper-button-prev, .swiper-button-next
+  top: 0
+  bottom: 0
+  margin: auto
+  width: 54px
+  height: 54px
+  overflow: visible
+
+.swiper-button-prev
+  &::after,
+    display: none
+
+.swiper-button-next
+  &::after
+    display: none
+
+.swiper-button-prev
+  background: url(../img/slide-prev.svg) no-repeat center/cover
+
+.swiper-button-next
+  background: url(../img/slide-next.svg) no-repeat center/cover

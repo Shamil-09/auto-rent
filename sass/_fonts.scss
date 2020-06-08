@@ -1,12 +1,4 @@
-@font-face {
-font-family: 'Myriad Pro Regular';
-src:
-url('../fonts/MYRIADPRO-REGULAR.woff') format('woff'),
-url('../fonts/MYRIADPRO-REGULAR.woff2') format('woff2');
-font-weight: normal;
-font-style: normal;
-font-display: swap;
-}
+
 
 @font-face {
   font-family: 'Istok Web';
@@ -23,6 +15,16 @@ font-display: swap;
   src: 
   url("../fonts/OpenSans-SemiBold.woff") format("woff"), 
   url("../fonts/OpenSans-SemiBold.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: 
+  url("../fonts/OpenSans-Bold.woff") format("woff"), 
+  url("../fonts/OpenSans-Bold.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;

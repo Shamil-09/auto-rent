@@ -19,7 +19,7 @@ $(document).ready(function () {
 
   // SLIDER PLACES
 
-  var mySwiperShowPlace = new Swiper('.places__swiper-container', {
+  var mySwiperShowPlace = new Swiper('.showplace__swiper-container', {
     // Optional parameters
     slidesPerView: 1,
     loop: true,
@@ -40,18 +40,22 @@ $(document).ready(function () {
         slidesPerView: 2,
         spaceBetween: 85
       },
-
+      // when window width is >= 1100px
+      // 1100: {
+      // 	slidesPerView: 3,
+      // 	spaceBetween: 30
+      // }
     },
 
     // Navigation arrows
     navigation: {
-      nextEl: '.places__swiper-button-next',
-      prevEl: '.places__swiper-button-prev',
+      nextEl: '.showplace__swiper-button-next',
+      prevEl: '.showplace__swiper-button-prev',
     }
   });
 
 
-  var mySwiperAboutAuto = new Swiper('.about__swiper-container', {
+  var mySwiperAboutAuto = new Swiper('.about-auto__swiper-container', {
     // Optional parameters
     slidesPerView: 1,
     spaceBetween: 3,
@@ -59,8 +63,8 @@ $(document).ready(function () {
 
     // Navigation arrows
     navigation: {
-      nextEl: '.about__swiper-button-next',
-      prevEl: '.about__swiper-button-prev',
+      nextEl: '.about-auto__swiper-button-next',
+      prevEl: '.about-auto__swiper-button-prev',
     },
   });
 
@@ -126,22 +130,22 @@ $(document).ready(function () {
 
   // Youtube
 
-  var player;
-  $('.hero__play').on('click', function onYouTubeIframeAPIReady() {
-    player = new YT.Player('player', {
-      height: '465',
-      width: '100%',
-      videoId: 'BkGFhBypWrc',
-      events: {
-        'onReady': videoPlay,
+  // var player;
+  // $('.showplace__play').on('click', function onYouTubeIframeAPIReady() {
+  //   player = new YT.Player('player', {
+  //     height: '465',
+  //     width: '100%',
+  //     videoId: 'BkGFhBypWrc',
+  //     events: {
+  //       'onReady': videoPlay,
 
-      }
-    });
-  })
+  //     }
+  //   });
+  // })
 
-  function videoPlay(event) {
-    event.target.playVideo();
-  }
+  // function videoPlay(event) {
+  //   event.target.playVideo();
+  // }
 
   // MODAL RESPONSE
 

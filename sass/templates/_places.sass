@@ -1,62 +1,158 @@
-.places
-  background: #f7f4f2
-  padding-bottom: 14.14rem
-  padding-top: 25.07rem
-  &__row
-    display: flex
-  &__text
-    max-width: 275px
-    &-camera
-      display: flex
-  &__main-text
-    font-size: 24px
-    line-height: 30px
-    margin-bottom: 7.14rem
-  &__span
-    color: #ff6600
-  &__second-text
-    font-size: 16px
+.showplace
+  margin: auto
+  padding-top: 0.11111px
+  padding-bottom: 16.2rem
+  background-color: #f7f4f2
+
+  &__section-title
+    margin-top: -20.4rem
+
+  &__heading
+    color: #fff
+    font-family: 'Istok Web', sans-serif
+    font-size: 3rem
+    line-height: 4rem
+    letter-spacing: -0.48px
+    margin-bottom: 1.3rem
+
+  &__subtitle
+    color: #fff
+    font-size: 1.08333rem
+    line-height: 2rem
     margin: 0
-    margin-right: 19px
-    cursor: pointer
-    text-decoration: none
+
+  &__video
+    position: relative
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+    max-width: 75rem
+    min-height: 42.16667rem
+    margin: auto
+
+  &__video-box
+    background: url("../img/video/video-bg.png") no-repeat center
+    margin-top: -14.1rem
+    margin-bottom: 9.1rem
+
+  &__play
+    display: block
+    width: 90px
+    height: 90px
+    background: url("../img/video/video-play.png") no-repeat center
+
+  &__wrapp
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+
+  &__text
+    width: 33%
+
+  &__text-title
+    font-size: 2.039rem
+    line-height: 3rem
+    font-weight: bold
+    margin-top: 0
+    margin-bottom: 7.5rem
+
+  &__text-title--primary
+    color: #f60
+
+  &__text-footer
     color: #000
-  &__camera
-    width: 20px
-    height: 12px
-    margin-top: 2px
-    cursor: pointer
+    font-size: 1.33333rem
+    line-height: 2.33333rem
+    font-weight: bold
+    text-decoration: none
+    margin: 0
 
-.places__slide
-  width: 63.8%
-  position: relative
+  &__text-footer
+    &::after
+      content: ''
+      display: inline-block
+      width: 20px
+      height: 12px
+      background: url("../img/video/all-video-icon.svg")
+      margin-left: 19px
 
-.swiper-container
-  margin-left: auto
-  margin-right: auto
-  position: relative
-  overflow: hidden
-  list-style: none
-  padding: 0
-  z-index: 1
+  &__slide
+    width: 63.8%
+    position: relative
 
-.places-button-prev
-  left: -3.83333rem
-  top: -32px
+  &__slide-video
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
 
-.places-button-next
-  right: -3.83333rem
-  top: -32px
+    flex-direction: column
 
-.places__swiper-wrapper
-  margin: 0 auto
-  margin-top: 0px
-  margin-top: 2.7rem
+    align-items: center
+    text-decoration: none
 
-.swiper-container .swiper-notification
-  position: absolute
+  &__slide-video-image
+
+    display: flex
+
+    justify-content: center
+
+    align-items: center
+    width: 25.5rem
+    height: 14.33333rem
+    margin-bottom: 1.5rem
+
+  &__slide-video-text
+
+    color: #444444
+    font-size: 1.08rem
+    line-height: 2rem
+    max-width: 23.5rem
+    margin: 0
+
+  &__swiper-wrapper
+    margin: 0 auto
+    margin-top: 2.7rem
+
+  &__swiper-button-prev
+    left: -3.83333rem
+    top: -32px
+
+  &__swiper-button-next
+    right: -3.83333rem
+    top: -32px
+
+#video-1
+  background: url("../img/video/video-1.jpg") no-repeat center/cover
+
+#video-2
+  background: url("../img/video/video-2.png") no-repeat center/cover
+
+#video-3
+  background: url("../img/video/video-3.jpg") no-repeat center/cover
+
+#video-4
+  background: url("../img/video/video-4.png") no-repeat center/cover
+
+.fancybox-slide
+  -webkit-backface-visibility: hidden
+  display: none
+  height: 100%
   left: 0
+  outline: none
+  overflow: auto
+  -webkit-overflow-scrolling: touch
+  padding: 44px
+  position: absolute
+  text-align: center
   top: 0
-  pointer-events: none
-  opacity: 0
-  z-index: -1000
+  transition-property: transform,opacity
+  white-space: normal
+  width: 100%
+  z-index: 99994

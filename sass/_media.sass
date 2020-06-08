@@ -45,6 +45,8 @@
   .hero
     &__video
       min-height: 200px
+  .title
+    font-size: 4.5rem
 
 @media screen and ( max-width: 375px )
 
@@ -245,13 +247,55 @@
     &__questions
       height: 215px
 
+  .showplace__slide-video-text
+    text-align: center
+    -ms-flex-item-align: auto
+    -ms-grid-row-align: auto
+    align-self: auto
+
 @media screen and ( max-width: 1200px )
 
   .footer
     &__info-contacts
       max-width: 30rem
 
+@media screen and (max-width: 1040px)
+  .showplace__section-title
+    margin-left: 3rem
+
 @media screen and ( max-width: 992px )
+
+  .showplace__video-box
+    margin-bottom: 3rem
+
+  .showplace__text
+    width: 100%
+    display: -webkit-box
+    display: -ms-flexbox
+    display: flex
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+    &-title
+      margin-bottom: 3.5rem
+
+    &-title--primary
+      display: block
+      text-align: center
+
+    &-footer
+      font-size: 1.2rem
+
+  .showplace__slide
+    width: 100%
+
+  .showplace__swiper-button-next
+    right: -30px
 
   .footer
     padding-right: 2rem
@@ -307,6 +351,14 @@
 
   // HOVERS OFF
 
+@media screen and (max-width: 1300px)
+
+  .about-auto__section-title
+    margin-left: 68rem
+
+  .about-auto__image
+    margin-right: 10rem
+
 @media screen and ( max-width: 992px )
 
   .nav
@@ -321,3 +373,193 @@
     &__promo
       &:hover
         color: #777
+
+  .about-auto__section-title
+    position: relative
+    margin: 0 auto
+    margin-bottom: 4rem
+
+  .about-auto__heading
+    max-width: 100%
+    text-align: center
+
+  .about-auto__image
+    margin-right: 5rem
+    max-width: 45.2rem
+    max-height: 25rem
+
+  .about-auto__swiper-button-next
+    margin-left: 43rem
+
+  .description__text
+    font-size: 1.1rem
+    line-height: 2rem
+
+@media screen and (max-width: 768px)
+
+  .showplace__section-title
+    margin-left: 0
+    margin-top: 0
+    margin-bottom: 2rem
+
+  .showplace__heading
+    color: #000
+    text-align: center
+
+  .showplace__subtitle
+    color: #000
+    text-align: center
+
+  .showplace__text-title
+    font-size: 1.8rem
+
+    &--primary
+      font-size: 1.8rem
+
+  .showplace__video-box
+    margin-top: 0
+
+  .about-auto__image
+    max-width: 100%
+    max-height: 100%
+    margin-right: 0
+    margin-bottom: 2.5rem
+
+  .about-auto__swiper-slide
+    -webkit-box-orient: vertical
+    -webkit-box-direction: normal
+    -ms-flex-direction: column
+    flex-direction: column
+    -webkit-box-align: center
+    -ms-flex-align: center
+    align-items: center
+
+  .about-auto__swiper-button-next
+    top: -16rem
+    margin-left: 0
+    right: -10px
+
+  .about-auto__swiper-button-prev
+    left: auto
+    top: -16rem
+    margin-left: 0
+    left: -10px
+
+  .about-auto__pagin
+    margin-left: 0
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+    margin-top: 2rem
+
+  .about-auto__current
+    margin-right: 1rem
+
+@media screen and (max-width: 680px)
+  .showplace__swiper-button-next
+    right: -28px
+
+@media screen and (max-width: 579px)
+  .showplace__video
+    min-height: 29.16667rem
+
+    &-box
+      max-height: 29.16667rem
+      background: url("../img/video/video-bg.png") no-repeat center/cover
+
+  .showplace__swiper-button-prev
+    left: 50px
+
+  .showplace__swiper-button-next
+    right: 50px
+
+@media screen and (max-width: 475px)
+  .showplace__video-box
+    max-height: 26.66667rem
+
+  .showplace__text-title
+    font-size: 1.5rem
+    line-height: 2.4rem
+    max-width: 27.7rem
+    text-align: center
+    margin-bottom: 1.5rem
+
+    &--primary
+      font-size: 1.5rem
+
+  .showplace__swiper-button-prev
+    left: 20px
+
+  .showplace__swiper-button-next
+    right: 20px
+
+  .about-auto__image
+    max-height: 23rem
+
+  .about-auto__swiper-button-next
+    top: -17rem
+
+  .about-auto__swiper-button-prev
+    top: -17rem
+
+@media screen and (max-width: 425px)
+
+  .about-auto__swiper-button-next
+    top: -19rem
+    right: -15px
+
+  .about-auto__swiper-button-prev
+    left: auto
+    top: -19rem
+    left: -15px
+
+@media screen and (max-width: 400px)
+  .showplace__video
+    min-height: 20rem
+
+  .showplace__video-box
+    max-height: 20rem
+
+  .showplace__swiper-button-prev
+    left: -15px
+
+  .showplace__swiper-button-next
+    right: -15px
+
+  .about-auto__image
+    max-height: 20rem
+
+@media screen and (max-height: 400px)
+
+  .showplace__section-title
+    margin-top: 0
+
+@media screen and (min-width: 992px)
+  .showplace__play
+    cursor: pointer
+
+    &:hover
+      background: url("../img/video/play-slide-active.png") no-repeat center
+
+  .showplace__slide-video
+    &:hover
+      position: relative
+      cursor: pointer
+
+  .showplace__slide-video:hover
+  .showplace__slide-video-text
+    color: #17bebb
+
+  .showplace__slide-video:hover
+  .showplace__slide-video-image
+    position: relative
+
+  .showplace__slide-video:hover
+  .showplace__slide-video-image::before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: rgba(23, 190, 187, 0.82) url("../img/video/play-slide-active.png") no-repeat center
