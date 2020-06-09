@@ -468,6 +468,127 @@ html, body {
   overflow-x: hidden;
 }
 
+@media screen and (max-width: 992px) {
+  .header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 50;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #222;
+    z-index: 2;
+  }
+  .header__menu {
+    position: relative;
+  }
+  .header__burger {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+    z-index: 3;
+  }
+  .header__burger span {
+    position: absolute;
+    background-color: #ffffff;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 9px;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::before {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .header__burger::after {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .active span {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  .active::before {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 9px;
+  }
+  .active::after {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    bottom: 9px;
+  }
+  .nav {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333333;
+    display: block;
+    padding: 15rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .nav__item {
+    margin-bottom: 30px;
+  }
+  .nav.active {
+    top: 0;
+    -webkit-transition: all 0.5s ease 0s;
+    transition: all 0.5s ease 0s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 40px;
+  }
+  .logo__image {
+    max-width: 100%;
+    margin: -1rem -4rem;
+    z-index: 3;
+  }
+}
+
 .header {
   width: 100%;
   color: white;
@@ -524,7 +645,7 @@ html, body {
   text-decoration: none;
   font-family: 'Open Sans', sans-serif;
   color: #ddd;
-  margin-right: 3.7rem;
+  margin-right: 2.7rem;
   font-size: 1.14rem;
   padding-bottom: 5px;
 }
@@ -601,6 +722,7 @@ html, body {
 
 .showplace__section-title {
   margin-top: -20.4rem;
+  padding-left: 2rem;
 }
 
 .showplace__heading {
@@ -1757,25 +1879,38 @@ html, body {
   html {
     font-size: 10px;
   }
+  .nav__item {
+    font-size: 20px;
+    margin: auto;
+  }
 }
 
 @media screen and (max-width: 830px) {
-  .menu__nav {
-    display: none;
-  }
   .logo {
-    margin: auto;
     margin-bottom: 2rem;
   }
 }
 
 @media screen and (max-width: 992px) {
+  .header__menu {
+    padding: 3.14rem 1.5rem 0 6.92rem;
+  }
   .hero__video-text {
     display: none;
+  }
+  .hero__content {
+    padding-top: 15rem;
   }
 }
 
 @media screen and (max-width: 830px) {
+  .header__menu {
+    margin-bottom: 0;
+  }
+  .hero__title {
+    margin: 0;
+    margin-bottom: 3rem;
+  }
   .hero__video {
     min-height: 26.14rem;
     max-width: 52rem;
@@ -1783,7 +1918,7 @@ html, body {
   .hero__content {
     text-align: center;
     margin: auto;
-    margin-bottom: 8rem;
+    padding-top: 18rem;
   }
   .hero__subtitle {
     margin: auto;
@@ -1795,8 +1930,8 @@ html, body {
   .hero__video {
     min-height: 200px;
   }
-  .title {
-    font-size: 4.5rem;
+  .hero__title {
+    font-size: 4rem;
   }
 }
 

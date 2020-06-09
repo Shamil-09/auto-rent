@@ -1,21 +1,15 @@
 $(document).ready(function () {
 
-
   // BURGER
 
-  $('.header__burger').click(function (e) {
-    $('.header__burger, .header__menu').toggleClass('active');
+
+
+  $('.header__burger').click(function (event) {
+    $('.header__burger, .nav').toggleClass('active');
     $('body').toggleClass('lock');
   });
 
-  $(".header__menu").on("click", "a", function (event) {
-    $('.header__burger, .header__menu').removeClass('active');
-    $('body').removeClass('lock');
-    event.preventDefault();
-    var id = $(this).attr('href'),
-      top = $(id).offset().top;
-    $('body,html').animate({ scrollTop: top }, 1500);
-  });
+
 
   // SLIDER PLACES
 
@@ -128,24 +122,6 @@ $(document).ready(function () {
     return false; // выключаем стандартное действие
   });
 
-  // Youtube
-
-  // var player;
-  // $('.showplace__play').on('click', function onYouTubeIframeAPIReady() {
-  //   player = new YT.Player('player', {
-  //     height: '465',
-  //     width: '100%',
-  //     videoId: 'BkGFhBypWrc',
-  //     events: {
-  //       'onReady': videoPlay,
-
-  //     }
-  //   });
-  // })
-
-  // function videoPlay(event) {
-  //   event.target.playVideo();
-  // }
 
   // MODAL RESPONSE
 

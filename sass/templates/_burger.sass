@@ -1,0 +1,91 @@
+
+@media screen and ( max-width: 992px )
+
+  .header
+    position: fixed
+    width: 100%
+    top: 0
+    left: 0
+    z-index: 50
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      background-color: #222
+      z-index: 2
+    &__menu
+      position: relative
+    &__burger
+      display: block
+      position: relative
+      width: 30px
+      height: 20px
+      z-index: 3
+      span
+        position: absolute
+        background-color: #ffffff
+        width: 100%
+        height: 2px
+        left: 0
+        top: 9px
+        transition: all 0.3s ease 0s
+      &::before
+        content: ''
+        background-color: #ffffff
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+        top: 0
+        transition: all 0.3s ease 0s
+      &::after
+        content: ''
+        background-color: #ffffff
+        position: absolute
+        width: 100%
+        height: 2px
+        left: 0
+        bottom: 0
+        transition: all 0.3s ease 0s
+
+  .active
+    span
+      transform: scale(0)
+    &::before
+      transform: rotate(45deg)
+      top: 9px
+    &::after
+      transform: rotate(-45deg)
+      bottom: 9px
+
+  .nav
+    position: fixed
+    top: -100%
+    left: 0
+    width: 100%
+    height: 100%
+    background-color: #333333
+    padding:
+    display: block
+    padding: 15rem 0
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    transition: all 0.3s ease 0s
+    &__item
+      margin-bottom: 30px
+    &.active
+      top: 0
+      transition: all 0.5s ease 0s
+      display: flex
+      justify-content: center
+      align-items: center
+      font-size: 40px
+
+  .logo__image
+    max-width: 100%
+    margin: -1rem -4rem
+    z-index: 3

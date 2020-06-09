@@ -7,35 +7,48 @@
   html
     font-size: 10px
 
+  .nav
+    &__item
+      font-size: 20px
+      margin: auto
+
 // HEADER  ////////////////////////////////////////////////////////////////  
 
 @media screen and ( max-width: 830px )
 
-  .menu__nav
-    display: none
-
   .logo
-    margin: auto
+    // margin: auto
     margin-bottom: 2rem
 
 // HERO  ////////////////////////////////////////////////////////////////  
 
 @media screen and ( max-width: 992px )
+  .header
+    &__menu
+      padding: 3.14rem 1.5rem 0 6.92rem
 
   .hero
     &__video-text
       display: none
+    &__content
+      padding-top: 15rem
 
 @media screen and ( max-width: 830px )
 
+  .header
+    &__menu
+      margin-bottom: 0
   .hero
+    &__title
+      margin: 0
+      margin-bottom: 3rem
     &__video
       min-height: 26.14rem
       max-width: 52rem
     &__content
       text-align: center
       margin: auto
-      margin-bottom: 8rem
+      padding-top: 18rem
     &__subtitle
       margin: auto
       margin-bottom: 2rem
@@ -45,8 +58,8 @@
   .hero
     &__video
       min-height: 200px
-  .title
-    font-size: 4.5rem
+    &__title
+      font-size: 4rem
 
 @media screen and ( max-width: 375px )
 
