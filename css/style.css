@@ -1090,8 +1090,8 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .about-auto__swiper-button-prev {
@@ -1107,9 +1107,9 @@ html, body {
   width: 58.5rem;
   height: 32.91667rem;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center;
-  object-position: center;
+     object-position: center;
   margin-right: 15.83333rem;
 }
 
@@ -1118,8 +1118,8 @@ html, body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-left: 8.2rem;
   margin-top: 3.9rem;
 }
@@ -1813,6 +1813,7 @@ html, body {
   height: 12px;
   overflow: visible;
   z-index: 10;
+  cursor: pointer;
 }
 
 .contacts__swiper-button-next {
@@ -1824,6 +1825,7 @@ html, body {
   height: 12px;
   overflow: visible;
   z-index: 10;
+  cursor: pointer;
 }
 
 .contacts__pagin {
@@ -2137,6 +2139,9 @@ html, body {
   .clients__subtitle {
     margin-bottom: 6rem;
   }
+  .clients__text1, .clients__text2, .clients__text3, .clients__text4 {
+    max-width: 200px;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -2202,12 +2207,14 @@ html, body {
   }
   .footer__questions {
     height: 190px;
+    padding: 11px 0;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .footer__questions {
     height: 215px;
+    padding: 23px 0;
   }
   .showplace__slide-video-text {
     text-align: center;
@@ -2565,6 +2572,35 @@ html, body {
     width: 100%;
     height: 100%;
     background: rgba(23, 190, 187, 0.82) url("../img/video/play-slide-active.png") no-repeat center;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .about-auto__section-title {
+    margin-left: 68rem;
+  }
+  .about-auto__image {
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .about-auto__section-title {
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 4rem;
+  }
+  .about-auto__heading {
+    max-width: 100%;
+    text-align: center;
+  }
+  .about-auto__image {
+    margin-right: 5rem;
+    max-width: 45.2rem;
+    max-height: 25rem;
+  }
+  .about-auto__swiper-button-next {
+    margin-left: 43rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
